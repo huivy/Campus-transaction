@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="page.page1.MyselfActivity">
+    >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1E90FF">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="个人中心"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/pic_myself"
+            />
+        <TextView
+            android:id="@+id/myId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textSize="25dp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/person"/>
+            <Button
+                android:id="@+id/myself"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="个人信息"
+                android:textSize="25dp"
+                android:gravity="left"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/pic_search"/>
+            <Button
+                android:id="@+id/myShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="我的发布"
+                android:textSize="25dp"
+                android:gravity="left"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/pic_set"/>
+            <Button
+                android:id="@+id/changepwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="修改密码"
+                android:textSize="25dp"
+                android:gravity="left"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/pic_about"/>
+            <Button
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="关 于"
+                android:textSize="25dp"
+                android:gravity="left"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/pic_login"/>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="登 录"
+                android:textSize="25dp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <!--中间为一条分割线-->
+    <View
+        android:background="#666666"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="1dp"
+        />
+
+    <!--最下边为RadioGroup-->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--第一个RadioButton-->
+        <RadioButton
+            android:id="@+id/button_1"
+            android:text="首页"
+            android:textStyle="bold"
+            android:button="@null"
+            android:textColor="#666666"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/pic_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+        <View
+            android:background="#CCCCCC"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+        <!--第二个RadioButton-->
+        <RadioButton
+            android:id="@+id/button_2"
+            android:text="发布闲置"
+            android:button="@null"
+            android:textStyle="bold"
+            android:textColor="#666666"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/pic_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--第三个RadioButton-->
+        <View
+            android:background="#CCCCCC"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+        <RadioButton
+            android:id="@+id/button_3"
+            android:text="个人中心"
+            android:textStyle="bold"
+            android:button="@null"
+            android:textColor="#666666"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/pic_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RadioGroup>
+</LinearLayout>

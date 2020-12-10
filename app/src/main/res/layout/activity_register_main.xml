@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="page.page1.RegisterMainActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1E90FF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            android:text="注册界面"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/pic_user"
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/user"
+
+                />
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:maxLines="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="50dp"
+                android:hint="请输入您的学号"
+                android:textSize="25dp"
+                android:textColorHint="#CCCCCC"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/passwd"
+                android:layout_marginTop="15dp"
+
+
+                />
+
+            <EditText
+                android:id="@+id/password1"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:maxLines="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="3dp"
+                android:inputType="textPassword"
+                android:hint="请输入您的密码"
+                android:textSize="25dp"
+                android:textColorHint="#CCCCCC"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/passwd"
+                android:layout_marginTop="15dp"
+
+
+                />
+
+            <EditText
+                android:id="@+id/password2"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:maxLines="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="3dp"
+                android:inputType="textPassword"
+                android:hint="请确认您的密码"
+                android:textSize="25dp"
+                android:textColorHint="#CCCCCC"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/register"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="确 定"
+            android:textSize="28dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:background="#00CC33"
+            />
+        <Button
+            android:id="@+id/toReturn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="取 消"
+            android:textSize="28dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:background="#FF0000"
+            />
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>

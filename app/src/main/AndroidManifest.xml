@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="page.page1">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".kind_page1" />
+        <activity android:name=".item_info" />
+        <activity android:name=".AboutMainActivity" />
+        <activity android:name=".changepwdActivity" />
+        <activity android:name=".main_page" />
+        <activity android:name=".MyselfActivity" />
+        <activity android:name=".RegisterMainActivity" />
+        <activity android:name=".setMymsgActivity" />
+        <activity android:name=".userMsgActivity" />
+        <activity android:name=".MyItems" />
+        <activity android:name=".AddItem" />
+        <activity android:name=".kind_page2" />
+        <activity android:name=".kind_page3" />
+        <activity android:name=".kind_page4"></activity>
+    </application>
+
+</manifest>
